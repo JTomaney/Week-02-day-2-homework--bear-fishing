@@ -6,6 +6,7 @@ class River
   end
 
   attr_reader :name
+  attr_accessor :fish_pop
 
   def add_fish(fish)
     @fish_pop.push(fish)
@@ -17,6 +18,14 @@ class River
       fishes.push(fish.name)
     end
     return fishes
+  end
+
+  def lose_fish(fish_name)
+    for fish in @fish_pop
+      if fish.name == fish_name
+        @fish_pop.delete(fish)
+      end
+    end
   end
 
 end
