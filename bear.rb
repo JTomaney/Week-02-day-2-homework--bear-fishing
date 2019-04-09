@@ -24,6 +24,10 @@ class Bear
     end
   end
 
+  def roar
+    return "Rwaahhhr"
+  end
+
 
 
 end
