@@ -32,4 +32,9 @@ class RiverTest < MiniTest::Test
     assert_equal(["Rimmer", "Lister"], @river.census)
   end
 
+  def test_river_can_spawn_fish
+    @river.spawn(["Kochansky", "Holly"])
+    assert_equal(["Rimmer", "Lister", "Cat", "Kochansky", "Holly"], @river.census)
+  end
+
 end

@@ -28,4 +28,10 @@ class River
     end
   end
 
+  def spawn(new_fish_array = [])
+    for new_fish in new_fish_array
+      @fish_pop.push(Fish.new(new_fish))
+    end
+  end
+
 end
