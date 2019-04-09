@@ -1,7 +1,8 @@
 class Bear
 
-  def initialize(bear_name)
+  def initialize(bear_name, bear_type)
     @name = bear_name
+    @type = bear_type
     @belly = []
   end
 
